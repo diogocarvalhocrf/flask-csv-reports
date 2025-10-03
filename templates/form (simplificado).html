@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/submit" method="POST">
+  <label>Escola:</label>
+  <input type="text" name="escola" required>
+
+  <label>Data:</label>
+  <input type="date" name="data" required>
+
+  <label>Presença:</label>
+  <input type="number" name="presenca" required>
+
+  <button type="submit">Enviar</button>
+</form>
+{% endblock %}
